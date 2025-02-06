@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Best Cars</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navitems">
+      <ul>
+        <li class="nav_item"><a href="{% url 'home' %}">Home</a></li>
+        <li class="nav_item"><a href="{% url 'about' %}">About Us</a></li>
+        <li class="nav_item">
+          <a href="{% url 'contact' %}" class="active">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contact Page Container -->
+    <div class="card">
+      <div class="banner">
+        <img src="/static/cars.jpeg" alt="cars image" />
+      </div>
+
+      <div class="row">
+        <div class="details">
+          <h1 class="title">Contact Us</h1>
+          <p>
+            📍 <strong>Address:</strong> 1234 Best Cars Street, Auto City, USA
+          </p>
+          <p>📞 <strong>Phone:</strong> +1 (234) 567-8900</p>
+          <p>✉️ <strong>Email:</strong> support@bestcars.com</p>
+
+          <h2>Business Hours</h2>
+          <p>🕒 Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>🕒 Saturday: 10:00 AM - 4:00 PM</p>
+          <p>🚗 Sunday: Closed</p>
+
+          <h2>Follow Us</h2>
+          <p>
+            🌐 <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
